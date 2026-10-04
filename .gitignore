@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Databases & Media
+chroma_db/
+backend/static/images/
+*.sqlite3
+
+# Expo / React Native
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# OS files
+.DS_Store
+Thumbs.db

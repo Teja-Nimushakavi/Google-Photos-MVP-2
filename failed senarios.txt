@@ -1,0 +1,12 @@
+scenario 1 - I searched for flag -" first I searched as flag it does not shown anything , in the second search i searched as American now it has shown the exact look"
+
+what we learn from Senario 1 : I searched for flag but it does not shown because the exact keyword does not match so, the result should be should consider the synonym of the word I have typed.
+
+Senario 2: for some photos it is not showing the photos , For example there is a pic which is showing the cows and grass field with cloudy sky and i tried the multiple searches with those keywords i didn't get the results.
+what we learn from Senario 2 : analyse the exact image properly and get the better description which can get more synonms. which will understand the keywords.
+
+Senario 3 : Here now I searched keyword with (old man, newspaper) the actual image represents that there is a bicycle and a old man reading the newspaper in a yellow house"
+what we learn from Senario 3 : in this scenario as well the image description should be very proper and the synonym for user keyword should understand.
+
+
+Note: if the user misspelled as well we have to auto recorrect it.

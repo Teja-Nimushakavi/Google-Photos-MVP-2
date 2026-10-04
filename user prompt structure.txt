@@ -1,0 +1,12 @@
+Now I wanted to structure the user prompt :
+
+user photo : k1-[user], K2-[location: beach , mountains, forest, city, roads etc....], K3-[with whom (friends, family, alone)], K4-[atmosphere: evening/morning/afternoon/night/], K5-[vibe : calm etc.....], K6-[object: cycles, ships, busses,etc...].
+
+
+Here K related to Keyword.
+
+If the User typed : me in road ; so the user given K1, K2
+                    then we have to ask him about remaining K3, K4, K5, K6
+
+So the smart suggestion should show " Does anyone with you: Friedns, family, Alone or Not sure " if user gave any keyword we should update the key word as 
+" me in road with my friends" and so on.... So we have to narrow sown the results with the updated keyword.

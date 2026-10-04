@@ -1,0 +1,2659 @@
+[
+    {
+        "id": "photo_001",
+        "url": "/static/images/photo_001.jpg",
+        "caption": "A swimmer performs the front crawl stroke in a calm lake under a cloudy sky.",
+        "metadata": {
+            "location": "Lake",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Water"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Swimming"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid",
+                "Action"
+            ]
+        }
+    },
+    {
+        "id": "photo_002",
+        "url": "/static/images/photo_002.jpg",
+        "caption": "A view of a coastal resort area framed by two tall buildings.",
+        "metadata": {
+            "location": "Beach resort",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_003",
+        "url": "/static/images/photo_003.jpg",
+        "caption": "A tall white lighthouse with a red top stands illuminated against a starry night sky.",
+        "metadata": {
+            "location": "Coastal",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_004",
+        "url": "/static/images/photo_004.jpg",
+        "caption": "A scenic view of a turquoise glacial lake nestled between towering, snow-capped mountains and dense evergreen forests.",
+        "metadata": {
+            "location": "Mountains",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_005",
+        "url": "/static/images/photo_005.jpg",
+        "caption": "A close-up pile of roasted coffee beans resting on a wooden surface.",
+        "metadata": {
+            "location": "Unknown",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Unknown",
+            "photo_type": [
+                "Macro",
+                "Still life"
+            ]
+        }
+    },
+    {
+        "id": "photo_006",
+        "url": "/static/images/photo_006.jpg",
+        "caption": "Several round hay bales sit in a harvested field on a foggy morning.",
+        "metadata": {
+            "location": "Farmland",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Rural"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Morning",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_007",
+        "url": "/static/images/photo_007.jpg",
+        "caption": "Parents and baby playing in the living room",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor",
+                "Home"
+            ],
+            "people": [
+                "Family",
+                "Baby"
+            ],
+            "activity": [
+                "Playing"
+            ],
+            "time": "Morning",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_008",
+        "url": "/static/images/photo_008.jpg",
+        "caption": "A night view of the Millennium Bridge and St. Paul's Cathedral in London.",
+        "metadata": {
+            "location": "London",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "River"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape",
+                "Architecture"
+            ]
+        }
+    },
+    {
+        "id": "photo_009",
+        "url": "/static/images/photo_009.jpg",
+        "caption": "Family walking through a colorful garden",
+        "metadata": {
+            "location": "Ooty",
+            "environment": [
+                "Outdoor",
+                "Garden",
+                "Nature"
+            ],
+            "people": [
+                "Family"
+            ],
+            "activity": [
+                "Outing"
+            ],
+            "time": "Afternoon",
+            "photo_type": [
+                "Candid",
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_010",
+        "url": "/static/images/photo_010.jpg",
+        "caption": "A low-angle view of the geometric, white facade of The Broad museum against a clear sky.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Architectural"
+            ]
+        }
+    },
+    {
+        "id": "photo_011",
+        "url": "/static/images/photo_011.jpg",
+        "caption": "A small herd of cattle grazes in a vast, green pasture under a dark, stormy sky.",
+        "metadata": {
+            "location": "Pasture",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Field"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Grazing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_012",
+        "url": "/static/images/photo_012.jpg",
+        "caption": "A person carrying a surfboard walks along railroad tracks next to a beach and cliffs.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Coastal"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Walking"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_013",
+        "url": "/static/images/photo_013.jpg",
+        "caption": "An elderly man sits in the doorway of a yellow building reading a newspaper, with a bicycle parked in the foreground.",
+        "metadata": {
+            "location": "Hoi An, Vietnam",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Street"
+            ],
+            "people": [
+                "Alone",
+                "Elderly man"
+            ],
+            "activity": [
+                "Reading",
+                "Resting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid",
+                "Street photography"
+            ]
+        }
+    },
+    {
+        "id": "photo_014",
+        "url": "/static/images/photo_014.jpg",
+        "caption": "Couple cooking together in a modern kitchen",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor",
+                "Kitchen"
+            ],
+            "people": [
+                "Partner"
+            ],
+            "activity": [
+                "Cooking"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_015",
+        "url": "/static/images/photo_015.jpg",
+        "caption": "A metal coin-operated telescope stands overlooking a body of water on a cloudy day.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_016",
+        "url": "/static/images/photo_016.jpg",
+        "caption": "A lone person sits on a sandy beach looking out at the ocean waves.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Coastal"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Resting",
+                "Sitting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_017",
+        "url": "/static/images/photo_017.jpg",
+        "caption": "A wooden honey dipper is submerged into a ceramic jar filled with dark honey.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Unknown",
+            "photo_type": [
+                "Macro",
+                "Still life"
+            ]
+        }
+    },
+    {
+        "id": "photo_018",
+        "url": "/static/images/photo_018.jpg",
+        "caption": "A person stands next to a bicycle on a waterfront promenade overlooking a body of water with hills in the distance.",
+        "metadata": {
+            "location": "Waterfront",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Standing",
+                "Resting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_019",
+        "url": "/static/images/photo_019.jpg",
+        "caption": "A high-angle view looking down at a dense forest with patches of snow on the ground.",
+        "metadata": {
+            "location": "Forest",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_020",
+        "url": "/static/images/photo_020.jpg",
+        "caption": "A man in a suit walks across an asphalt road with white lane markings.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Walking"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_021",
+        "url": "/static/images/photo_021.jpg",
+        "caption": "A scenic view of the white buildings and windmills in Oia, Santorini, Greece.",
+        "metadata": {
+            "location": "Oia, Santorini, Greece",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Coastal"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_022",
+        "url": "/static/images/photo_022.jpg",
+        "caption": "A young woman with long blonde hair walks through a grassy field during sunset.",
+        "metadata": {
+            "location": "Field",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Walking"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Portrait",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_023",
+        "url": "/static/images/photo_023.jpg",
+        "caption": "A group of seagulls perches on a weathered concrete wall overlooking the ocean.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Coastal"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Resting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape",
+                "Wildlife"
+            ]
+        }
+    },
+    {
+        "id": "photo_024",
+        "url": "/static/images/photo_024.jpg",
+        "caption": "A drafting compass and a leather notebook rest on a wooden desk with industrial pipe supports.",
+        "metadata": {
+            "location": "Office",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Macro"
+            ]
+        }
+    },
+    {
+        "id": "photo_025",
+        "url": "/static/images/photo_025.jpg",
+        "caption": "A solitary cross stands atop a snow-covered mountain peak under a dramatic, cloudy sky at sunset.",
+        "metadata": {
+            "location": "Mountain",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Alpine"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_026",
+        "url": "/static/images/photo_026.jpg",
+        "caption": "A top-down view of a desk workspace featuring a laptop, books, a notebook, pencils, and a smartphone placed on an open design book.",
+        "metadata": {
+            "location": "Office",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_027",
+        "url": "/static/images/photo_027.jpg",
+        "caption": "Small chunks of ice rest on a dark, pebbled beach along a calm, blue-toned coastline under a cloudy sky.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Coastal"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_028",
+        "url": "/static/images/photo_028.jpg",
+        "caption": "A scenic view of turquoise water framed by two large, rocky cliffs under a cloudy sky.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_029",
+        "url": "/static/images/photo_029.jpg",
+        "caption": "A deserted train station platform illuminated by glowing streetlights during a foggy night.",
+        "metadata": {
+            "location": "Train station",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_030",
+        "url": "/static/images/photo_030.jpg",
+        "caption": "Small chunks of ice rest on a dark, pebbled beach along a calm, blue-toned coastline under a cloudy sky.",
+        "metadata": {
+            "location": "Beach",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Coastal"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_031",
+        "url": "/static/images/photo_031.jpg",
+        "caption": "A vintage green bicycle is parked against the weathered wooden wall of a rustic shed.",
+        "metadata": {
+            "location": "Rural area",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Rustic"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Still life"
+            ]
+        }
+    },
+    {
+        "id": "photo_032",
+        "url": "/static/images/photo_032.jpg",
+        "caption": "Close up of a laptop on a desk with coffee",
+        "metadata": {
+            "location": "Office",
+            "environment": [
+                "Indoor",
+                "Office"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Work"
+            ],
+            "time": "Morning",
+            "photo_type": [
+                "Macro"
+            ]
+        }
+    },
+    {
+        "id": "photo_033",
+        "url": "/static/images/photo_033.jpg",
+        "caption": "Sunlight filters through the tall trees of a forest, creating visible light rays in the hazy air.",
+        "metadata": {
+            "location": "Forest",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_034",
+        "url": "/static/images/photo_034.jpg",
+        "caption": "An aerial satellite view showing the contrast between the arid coastline and the deep blue ocean.",
+        "metadata": {
+            "location": "Coastline",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape",
+                "Satellite imagery"
+            ]
+        }
+    },
+    {
+        "id": "photo_035",
+        "url": "/static/images/photo_035.jpg",
+        "caption": "A close-up view of many roasted coffee beans.",
+        "metadata": {
+            "location": "Unknown",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Unknown",
+            "photo_type": [
+                "Macro"
+            ]
+        }
+    },
+    {
+        "id": "photo_036",
+        "url": "/static/images/photo_036.jpg",
+        "caption": "A train travels along tracks between busy lanes of traffic in a city at sunset with the Arc de Triomphe visible in the distance.",
+        "metadata": {
+            "location": "Paris",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "City"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Commuting",
+                "Driving",
+                "Traveling"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_037",
+        "url": "/static/images/photo_037.jpg",
+        "caption": "Raindrops are scattered across a dark, textured surface.",
+        "metadata": {
+            "location": "Unknown",
+            "environment": [
+                "Outdoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Unknown",
+            "photo_type": [
+                "Macro"
+            ]
+        }
+    },
+    {
+        "id": "photo_038",
+        "url": "/static/images/photo_038.jpg",
+        "caption": "A large crowd of spectators fills the stands of a football stadium with mountains in the background.",
+        "metadata": {
+            "location": "Football Stadium",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Urban"
+            ],
+            "people": [
+                "Crowd",
+                "Group"
+            ],
+            "activity": [
+                "Watching sports"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid",
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_039",
+        "url": "/static/images/photo_039.jpg",
+        "caption": "A serene view of a calm lake at sunset with distant hills on the horizon.",
+        "metadata": {
+            "location": "Lake",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_040",
+        "url": "/static/images/photo_040.jpg",
+        "caption": "A majestic waterfall cascades down a rocky cliff into a lush, green valley surrounded by a dense forest.",
+        "metadata": {
+            "location": "Forest",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_041",
+        "url": "/static/images/photo_041.jpg",
+        "caption": "A lone person stands before the massive Sk\u00f3gafoss waterfall in Iceland.",
+        "metadata": {
+            "location": "Waterfall",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Standing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_042",
+        "url": "/static/images/photo_042.jpg",
+        "caption": "A wooden bench sits empty on a wooden deck overlooking a body of water.",
+        "metadata": {
+            "location": "Waterfront",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_043",
+        "url": "/static/images/photo_043.jpg",
+        "caption": "A silhouette of the Chicago skyline at dusk viewed across the water.",
+        "metadata": {
+            "location": "Chicago",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Waterfront"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_044",
+        "url": "/static/images/photo_044.jpg",
+        "caption": "A cozy bookstore with warm lighting",
+        "metadata": {
+            "location": "Local City",
+            "environment": [
+                "Indoor",
+                "Shop"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Reading",
+                "Shopping"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_045",
+        "url": "/static/images/photo_045.jpg",
+        "caption": "A young fallow deer stands in a forest with soft sunlight illuminating its fur.",
+        "metadata": {
+            "location": "Forest",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Wildlife",
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_046",
+        "url": "/static/images/photo_046.jpg",
+        "caption": "A man stands on a rocky shore overlooking a calm mountain lake during a dramatic sunset.",
+        "metadata": {
+            "location": "Mountain lake",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Resting",
+                "Observing"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_047",
+        "url": "/static/images/photo_047.jpg",
+        "caption": "A man stands by a calm lake holding a camera while looking out at the horizon.",
+        "metadata": {
+            "location": "Lake",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Resting",
+                "Observing"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Landscape",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_048",
+        "url": "/static/images/photo_048.jpg",
+        "caption": "Beautiful sunset over the ocean",
+        "metadata": {
+            "location": "Goa",
+            "environment": [
+                "Outdoor",
+                "Beach",
+                "Nature"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Travel"
+            ],
+            "time": "Golden Hour",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_049",
+        "url": "/static/images/photo_049.jpg",
+        "caption": "A vibrant display of the aurora borealis illuminates the night sky above a snow-covered pine forest.",
+        "metadata": {
+            "location": "Forest",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Winter"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_050",
+        "url": "/static/images/photo_050.jpg",
+        "caption": "A large American flag waves in the sky with a small helicopter flying in the distance.",
+        "metadata": {
+            "location": "Outdoor",
+            "environment": [
+                "Outdoor",
+                "Sky"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "None"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_ba0210f4",
+        "url": "/static/images/A5 Size Bill Book Printing Sample _ Electrical Goods Bill Book - Rayanz.jpg",
+        "caption": "A blank estimate or bill pad from Galaxy Power Electricals.",
+        "metadata": {
+            "location": "Office",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Working"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Macro"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_4fce9430",
+        "url": "/static/images/AZ Mall Oran \u2764\ufe0f.jpg",
+        "caption": "A high-angle view of a busy multi-level shopping mall with people walking and shopping.",
+        "metadata": {
+            "location": "Shopping Mall",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Walking",
+                "Shopping",
+                "Browsing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid",
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_4fa65dff",
+        "url": "/static/images/download (1).jpg",
+        "caption": "A collage of candid moments capturing the bond between two friends.",
+        "metadata": {
+            "location": "Various",
+            "environment": [
+                "Indoor",
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Hanging out",
+                "Walking",
+                "Playing",
+                "Celebrating"
+            ],
+            "time": "Various",
+            "photo_type": [
+                "Candid",
+                "Selfie",
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_ef0679e5",
+        "url": "/static/images/download (10).jpg",
+        "caption": "A handwritten poem about hidden feelings in a notebook.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Writing",
+                "Reflecting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Macro",
+                "Still life"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_cac2e1c8",
+        "url": "/static/images/download (11).jpg",
+        "caption": "A modern, elegantly designed bedroom with neutral tones and ambient lighting.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Resting"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Interior design photography"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_94563004",
+        "url": "/static/images/download (12).jpg",
+        "caption": "A modern, minimalist bedroom with soft ambient lighting and elegant decor.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Resting"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Interior photography"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_d82522fe",
+        "url": "/static/images/download (13).jpg",
+        "caption": "A screenshot of a WhatsApp conversation showing a series of apology messages.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Messaging"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Screenshot"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_d3f9e8fa",
+        "url": "/static/images/download (14).jpg",
+        "caption": "A screenshot of a WhatsApp chat conversation featuring a photo of a smiling child.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "Child"
+            ],
+            "activity": [
+                "Messaging",
+                "Chatting"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Screenshot",
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_785e3f32",
+        "url": "/static/images/download (15).jpg",
+        "caption": "A devotee offering prayers in front of the Tirumala Venkateswara Temple at night.",
+        "metadata": {
+            "location": "Tirumala Venkateswara Temple, Tirupati",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Religious site"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Praying",
+                "Worshipping"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid",
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_a3f2f760",
+        "url": "/static/images/download (16).jpg",
+        "caption": "A man posing in front of the Adiyogi Shiva statue.",
+        "metadata": {
+            "location": "Adiyogi Shiva Statue, Coimbatore",
+            "environment": [
+                "Outdoor",
+                "Monument"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Posing",
+                "Visiting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_3053b90e",
+        "url": "/static/images/download (17).jpg",
+        "caption": "A young man posing in front of the Adiyogi Shiva statue at the Isha Yoga Center.",
+        "metadata": {
+            "location": "Isha Yoga Center, Coimbatore",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Monument"
+            ],
+            "people": [
+                "Alone",
+                "Crowd"
+            ],
+            "activity": [
+                "Sightseeing",
+                "Posing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_c9d7e96c",
+        "url": "/static/images/download (18).jpg",
+        "caption": "A person admiring the Adiyogi Shiva statue at the Isha Yoga Center.",
+        "metadata": {
+            "location": "Isha Yoga Center, Coimbatore",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Mountain"
+            ],
+            "people": [
+                "Alone",
+                "Crowd"
+            ],
+            "activity": [
+                "Sightseeing",
+                "Standing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_222a6be0",
+        "url": "/static/images/download (19).jpg",
+        "caption": "A young man receiving a tilak blessing from a sadhu in front of the Kedarnath Temple with snow-capped mountains in the background.",
+        "metadata": {
+            "location": "Kedarnath Temple, Himalayas",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Mountain",
+                "Religious site"
+            ],
+            "people": [
+                "Two people"
+            ],
+            "activity": [
+                "Blessing",
+                "Praying",
+                "Sitting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_4bfe31b3",
+        "url": "/static/images/download (2).jpg",
+        "caption": "A couple hiking together on a misty mountain trail.",
+        "metadata": {
+            "location": "Mountain",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Forest"
+            ],
+            "people": [
+                "Friends",
+                "Couple"
+            ],
+            "activity": [
+                "Walking",
+                "Hiking"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_a4210e7d",
+        "url": "/static/images/download (20).jpg",
+        "caption": "A cozy cafe interior with a decorative chalkboard wall and yellow hanging flowers.",
+        "metadata": {
+            "location": "Cafe",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Resting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_2f883361",
+        "url": "/static/images/download (21).jpg",
+        "caption": "A night view of a residential apartment complex with illuminated windows and streetlights.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Resting"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_0fe7c6de",
+        "url": "/static/images/download (3).jpg",
+        "caption": "A couple standing on a mountain peak during golden hour, watching a breathtaking sunrise or sunset over a sea of clouds. They are wearing winter clothes, beanies, and backpacks, enjoying the scenic sightseeing view.",
+        "metadata": {
+            "location": "Mountain",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Clouds"
+            ],
+            "people": [
+                "Friends",
+                "Couple"
+            ],
+            "activity": [
+                "Sightseeing",
+                "Resting",
+                "Hiking"
+            ],
+            "time": "Golden Hour",
+            "photo_type": [
+                "Portrait",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_c2f90a0a",
+        "url": "/static/images/download (4).jpg",
+        "caption": "A person lying in a grassy field reading a book titled The Art of Being Alone.",
+        "metadata": {
+            "location": "Field",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Reading",
+                "Resting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_972d95cd",
+        "url": "/static/images/download (5).jpg",
+        "caption": "A blank bill or cash memo template for Shree Motors car service station.",
+        "metadata": {
+            "location": "Office",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Administrative"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Document"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_ff31732a",
+        "url": "/static/images/download (6).jpg",
+        "caption": "A Secondary School Certificate from the Board of Secondary Education, Andhra Pradesh, belonging to G Vijay Kumar.",
+        "metadata": {
+            "location": "Office",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Documenting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Document"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_714d9591",
+        "url": "/static/images/download (7).jpg",
+        "caption": "A High School Examination certificate from the Board of High School and Intermediate Education, Uttar Pradesh, issued in 2019.",
+        "metadata": {
+            "location": "Prayagraj, Uttar Pradesh",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Documenting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Document"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_d3202499",
+        "url": "/static/images/download (8).jpg",
+        "caption": "A 50 Indian Rupee note with a handwritten romantic message in Hindi.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Writing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Macro",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_c7b05588",
+        "url": "/static/images/download (9).jpg",
+        "caption": "A twenty rupee Indian banknote with handwritten text in Marathi.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Displaying"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Macro"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_b05993ab",
+        "url": "/static/images/Evening vibes in the city_.jpg",
+        "caption": "A beautifully lit outdoor walkway at night with palm trees and storefronts.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Walking",
+                "Shopping"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_4a705368",
+        "url": "/static/images/Kolkata.jpg",
+        "caption": "The illuminated Victoria Memorial in Kolkata reflected in the water at night.",
+        "metadata": {
+            "location": "Kolkata, India",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Park"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Sightseeing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape",
+                "Architecture"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_06201cd6",
+        "url": "/static/images/lastest 2026 flower gemini photo  prompt in description  male_female both.jpg",
+        "caption": "A young man sitting in a field of yellow flowers, holding out a single daisy towards the camera.",
+        "metadata": {
+            "location": "Meadow",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Sitting",
+                "Holding flower"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_275e07c2",
+        "url": "/static/images/Men Regular Fit Mid-Rise Jeans.jpg",
+        "caption": "A stylish young man taking a mirror selfie in a modern, minimalist room.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor",
+                "Modern"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Selfie",
+                "Standing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait",
+                "Selfie"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_06b00d8f",
+        "url": "/static/images/Some people don\u2019t leave your life \u2014 they change you_.jpg",
+        "caption": "A handwritten letter titled The person whom i admire written on a notebook page.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Writing",
+                "Reading"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Macro",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_e579e2a2",
+        "url": "/static/images/\u2728 classy check shirts \u2728.jpg",
+        "caption": "A young man taking a mirror selfie in front of a white wall adorned with vibrant pink bougainvillea flowers.",
+        "metadata": {
+            "location": "Outdoor courtyard",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Taking a selfie"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Selfie",
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_7b041f0d",
+        "url": "/static/images/\ud83d\udcaf.jpg",
+        "caption": "A person standing in a bookstore with a book covering their face.",
+        "metadata": {
+            "location": "Bookstore",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Reading",
+                "Browsing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_1843d261",
+        "url": "/static/images/\ud83d\udecd\ufe0f.jpg",
+        "caption": "A person walking through a modern shopping mall with a Tiger Sugar store visible in the background.",
+        "metadata": {
+            "location": "Shopping Mall",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Walking",
+                "Shopping"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_5d4ceb7c",
+        "url": "/static/images/1.jpg",
+        "caption": "A group of people dancing and enjoying the night at a club.",
+        "metadata": {
+            "location": "Nightclub",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends",
+                "Crowd"
+            ],
+            "activity": [
+                "Dancing",
+                "Socializing",
+                "Partying"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_2534abbc",
+        "url": "/static/images/2.jpg",
+        "caption": "A group of friends gathered around a bonfire at night.",
+        "metadata": {
+            "location": "Mountain",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Friends",
+                "Crowd"
+            ],
+            "activity": [
+                "Socializing",
+                "Gathering",
+                "Bonfire"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_48f1dabb",
+        "url": "/static/images/3.jpg",
+        "caption": "A large group of friends gathered for a casual evening hangout in a backyard.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Outdoor",
+                "Residential"
+            ],
+            "people": [
+                "Friends",
+                "Crowd"
+            ],
+            "activity": [
+                "Socializing",
+                "Hanging out",
+                "Relaxing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid",
+                "Wide angle"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_c8d9e343",
+        "url": "/static/images/bh4vv_ssspin.io_1791117945.mp4",
+        "caption": "A lively crowd dancing and enjoying music at a nightclub.",
+        "metadata": {
+            "location": "Nightclub",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd",
+                "Friends"
+            ],
+            "activity": [
+                "Dancing",
+                "Partying"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Video",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_8e461476",
+        "url": "/static/images/dancing by the fire.jpg",
+        "caption": "A group of people gathered around a campfire at night, playing drums and dancing.",
+        "metadata": {
+            "location": "Backyard",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Friends",
+                "Crowd"
+            ],
+            "activity": [
+                "Dancing",
+                "Drumming",
+                "Socializing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_82083cb7",
+        "url": "/static/images/#aesthetic #pinterest #tiktok #wall #friends #cinema #tumblr #summer.jpg",
+        "caption": "A group of friends playing air hockey at an arcade inside a movie theater.",
+        "metadata": {
+            "location": "Movie Theater",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Playing",
+                "Gaming",
+                "Socializing"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_3bf6132f",
+        "url": "/static/images/#rain #rainyseason #monsoon #aesthetic #rainaesthetic #busyday #trafficaesthetic #photosideas.jpg",
+        "caption": "A city street scene featuring a blue bus and a rickshaw under a large concrete overpass on a rainy day.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Street"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Traffic",
+                "Commuting"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid",
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_e7aa50be",
+        "url": "/static/images/#Saiyaara.jpg",
+        "caption": "A view from the seats inside a movie theater during a film screening.",
+        "metadata": {
+            "location": "Movie Theater",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Watching a movie"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_bd54a259",
+        "url": "/static/images/#PinterestInspo_#FestiveInspo_#ViralPinterest_#TrendingNow_#AestheticGoals#PinterestInspo_#TrendingNow_#CreativeVibes_#ArtLover_#ExploreArt_#pinterestinspired #pinterestfinds #aestheticvibes #trendingnow #dailyinspo.jpg",
+        "caption": "Two women celebrating with fireworks at night.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Celebrating",
+                "Lighting fireworks"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_bbb5d80d",
+        "url": "/static/images/bowling e pizza\ud83d\ude0d.jpg",
+        "caption": "Enjoying pizza and drinks at a bowling alley.",
+        "metadata": {
+            "location": "Bowling Alley",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Eating",
+                "Bowling"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_668741a3",
+        "url": "/static/images/Diwali Firecracker.jpg",
+        "caption": "A vibrant firework fountain lighting up the night.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends",
+                "Family"
+            ],
+            "activity": [
+                "Celebrating",
+                "Watching fireworks"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_96a5f3ad",
+        "url": "/static/images/downl17oad (1).jpg",
+        "caption": "A vibrant street decorated with colorful umbrellas and string lights at night in Chandigarh.",
+        "metadata": {
+            "location": "City Centre, Chandigarh",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Street"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Driving",
+                "Sightseeing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_12cfc0df",
+        "url": "/static/images/kino.jpg",
+        "caption": "Audience members sitting in a movie theater before the film starts.",
+        "metadata": {
+            "location": "Movie theater",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Waiting",
+                "Watching movie"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_c04541b4",
+        "url": "/static/images/n1.jpg",
+        "caption": "Three friends posing happily in front of a scenic waterfall.",
+        "metadata": {
+            "location": "Waterfall",
+            "environment": [
+                "Outdoor",
+                "Nature"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Posing",
+                "Sightseeing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_54a7a6ba",
+        "url": "/static/images/n10.jpg",
+        "caption": "Two fountain fireworks erupting in the dark.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Celebrating",
+                "Fireworks display"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_61a64827",
+        "url": "/static/images/n11.jpg",
+        "caption": "A festive display of sparkler fountains illuminating the night.",
+        "metadata": {
+            "location": "Outdoor venue",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Celebrating",
+                "Watching fireworks"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_daac8bac",
+        "url": "/static/images/n12.jpg",
+        "caption": "The majestic Kedarnath Temple nestled against the snow-capped Himalayan peaks.",
+        "metadata": {
+            "location": "Kedarnath Temple, Himalayas, India",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Mountain"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Pilgrimage",
+                "Worship",
+                "Sightseeing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Landscape",
+                "Architecture"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_2bae67cd",
+        "url": "/static/images/n13.jpg",
+        "caption": "Priests performing the evening Ganga Aarti ritual on the banks of the Ganges in Varanasi.",
+        "metadata": {
+            "location": "Varanasi, India",
+            "environment": [
+                "Outdoor",
+                "Urban",
+                "Religious site"
+            ],
+            "people": [
+                "Crowd",
+                "Priests"
+            ],
+            "activity": [
+                "Religious ritual",
+                "Worship",
+                "Ceremony"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid",
+                "Documentary"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_03369f18",
+        "url": "/static/images/n14.jpg",
+        "caption": "A joyful couple covered in paint embracing during a school celebration.",
+        "metadata": {
+            "location": "School campus",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Celebrating",
+                "Hugging",
+                "Playing with paint"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid",
+                "Portrait"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_0bca1a88",
+        "url": "/static/images/n15.jpg",
+        "caption": "A group of women in traditional colorful attire performing Garba dance during Navratri celebrations.",
+        "metadata": {
+            "location": "Community Event Hall",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd",
+                "Friends"
+            ],
+            "activity": [
+                "Dancing",
+                "Celebrating",
+                "Performing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_c62f7816",
+        "url": "/static/images/n16.jpg",
+        "caption": "A vibrant Navratri celebration with people dancing under colorful canopy decorations.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Dancing",
+                "Celebrating",
+                "Socializing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_a4170885",
+        "url": "/static/images/n2.jpg",
+        "caption": "A group of friends hiking through a rocky, forested trail.",
+        "metadata": {
+            "location": "Mountain",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Forest"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Hiking",
+                "Walking",
+                "Exploring"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_6d4006dc",
+        "url": "/static/images/n3.jpg",
+        "caption": "A group of hikers crossing a shallow stream in a lush forest.",
+        "metadata": {
+            "location": "Mountain",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Forest"
+            ],
+            "people": [
+                "Friends",
+                "Crowd"
+            ],
+            "activity": [
+                "Hiking",
+                "Walking",
+                "Crossing stream"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_33a37bd4",
+        "url": "/static/images/n4.jpg",
+        "caption": "A person navigating a high ropes course in a forest.",
+        "metadata": {
+            "location": "Adventure Park",
+            "environment": [
+                "Outdoor",
+                "Nature",
+                "Forest"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Climbing",
+                "Adventure",
+                "High ropes course"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_88bd56cf",
+        "url": "/static/images/n5.jpg",
+        "caption": "A cozy meal of pasta and a Sprite while watching Netflix on a laptop.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Eating",
+                "Watching movies"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_6369f632",
+        "url": "/static/images/n6.jpg",
+        "caption": "Watching Harry Potter on a laptop while eating a bowl of noodles.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "Alone"
+            ],
+            "activity": [
+                "Eating",
+                "Watching movie"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_0a4f292d",
+        "url": "/static/images/n7.jpg",
+        "caption": "A group of friends taking a selfie in a convex traffic mirror at night.",
+        "metadata": {
+            "location": "City",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Taking a selfie"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Selfie",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_faf7e7ad",
+        "url": "/static/images/n8.jpg",
+        "caption": "A group of friends having fun in a store while covering their faces with mushroom plushies.",
+        "metadata": {
+            "location": "Miniso store",
+            "environment": [
+                "Indoor",
+                "Retail",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Shopping",
+                "Playing",
+                "Posing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_53e5706a",
+        "url": "/static/images/n9.jpg",
+        "caption": "A bucket of popcorn and drinks at a PVR cinema.",
+        "metadata": {
+            "location": "Cinema",
+            "environment": [
+                "Indoor"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Watching movie",
+                "Eating"
+            ],
+            "time": "Evening",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_9e8edad8",
+        "url": "/static/images/Radhe Radhe.jpg",
+        "caption": "A vibrant religious procession featuring a large statue of the goddess Durga being carried through a crowd of devotees.",
+        "metadata": {
+            "location": "Temple",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Crowd"
+            ],
+            "activity": [
+                "Religious festival",
+                "Procession",
+                "Worship",
+                "Photography"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_e6718229",
+        "url": "/static/images/The color run_ The happiest 5k on the planet! Memphis 10-13-12.jpg",
+        "caption": "A group of friends lying in a circle after participating in a Color Run event.",
+        "metadata": {
+            "location": "Outdoor track",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Resting",
+                "Socializing"
+            ],
+            "time": "Day",
+            "photo_type": [
+                "Selfie",
+                "Candid"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_3fc65839",
+        "url": "/static/images/wedding season \ud83c\udf87.jpg",
+        "caption": "A house decorated with festive string lights at night.",
+        "metadata": {
+            "location": "Home",
+            "environment": [
+                "Outdoor",
+                "Urban"
+            ],
+            "people": [
+                "None"
+            ],
+            "activity": [
+                "Decorating"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Landscape"
+            ]
+        }
+    },
+    {
+        "id": "photo_new_3408f1fd",
+        "url": "/static/images/\u201cOne Bite & Stress Gone \ud83d\ude2d\ud83d\udc9b\u201d.jpg",
+        "caption": "A group of friends enjoying ice cream cones inside a car at night.",
+        "metadata": {
+            "location": "Car",
+            "environment": [
+                "Indoor",
+                "Urban"
+            ],
+            "people": [
+                "Friends"
+            ],
+            "activity": [
+                "Eating",
+                "Socializing"
+            ],
+            "time": "Night",
+            "photo_type": [
+                "Candid",
+                "Close-up"
+            ]
+        }
+    }
+]

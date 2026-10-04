@@ -1,0 +1,49 @@
+[
+  {
+    "id": "photo_001",
+    "url": "/static/images/photo_001.jpg",
+    "caption": "A swimmer performs the front crawl stroke in a calm lake under a cloudy sky.",
+    "metadata": {
+      "location": "Lake",
+      "environment": [
+        "Outdoor",
+        "Nature",
+        "Water"
+      ],
+      "people": [
+        "Alone"
+      ],
+      "activity": [
+        "Swimming"
+      ],
+      "time": "Day",
+      "photo_type": [
+        "Candid",
+        "Action"
+      ]
+    }
+  },
+  {
+    "id": "photo_002",
+    "url": "/static/images/photo_002.jpg",
+    "caption": "A view of a coastal resort area framed by two tall buildings.",
+    "metadata": {
+      "location": "Beach resort",
+      "environment": [
+        "Outdoor",
+        "Urban",
+        "Nature"
+      ],
+      "people": [
+        "None"
+      ],
+      "activity": [
+        "None"
+      ],
+      "time": "Day",
+      "photo_type": [
+        "Landscape"
+      ]
+    }
+  }
+]
