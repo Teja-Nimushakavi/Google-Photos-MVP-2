@@ -8,8 +8,6 @@ __pycache__/
 .pytest_cache/
 
 # Databases & Media
-chroma_db/
-backend/static/images/
 *.sqlite3
 
 # Expo / React Native
