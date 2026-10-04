@@ -25,13 +25,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Data Paths Configuration for Deployment (e.g. Railway Volumes)
+DATA_DIR = os.getenv("DATA_DIR", ".")
+STATIC_DIR = os.path.join(DATA_DIR, "static")
+JSON_PATH = os.path.join(DATA_DIR, "photos_dataset.json")
+DB_PATH = os.path.join(DATA_DIR, "chroma_db")
+
 # Serve static files (like downloaded images)
-if os.path.exists("static"):
-    app.mount("/static", StaticFiles(directory="static"), name="static")
+os.makedirs(STATIC_DIR, exist_ok=True)
+if os.path.exists(STATIC_DIR):
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 # Load dataset
 try:
-    with open("photos_dataset.json", "r") as f:
+    with open(JSON_PATH, "r") as f:
         photos_db = json.load(f)
 except FileNotFoundError:
     photos_db = []
@@ -41,7 +48,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key) if api_key and api_key != "your_gemini_api_key_here" else None
 
 # ChromaDB Client
-chroma_client = chromadb.PersistentClient(path="./chroma_db")
+chroma_client = chromadb.PersistentClient(path=DB_PATH)
 collection = chroma_client.get_or_create_collection(
     name="photos",
     metadata={"hnsw:space": "cosine"}

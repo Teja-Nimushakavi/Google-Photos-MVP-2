@@ -18,8 +18,10 @@ if not api_key or api_key == "your_gemini_api_key_here":
     exit(1)
 client = genai.Client(api_key=api_key)
 
-dataset_path = "photos_dataset.json"
-images_dir = "static/images"
+DATA_DIR = os.getenv("DATA_DIR", ".")
+dataset_path = os.path.join(DATA_DIR, "photos_dataset.json")
+images_dir = os.path.join(DATA_DIR, "static", "images")
+os.makedirs(images_dir, exist_ok=True)
 
 # Schema for new image basic metadata extraction
 class ImageMetadata(BaseModel):
