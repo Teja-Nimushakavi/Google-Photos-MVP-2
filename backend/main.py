@@ -372,13 +372,23 @@ def perform_search(
                 has_keyword_match = True
                 break
 
+        # --- Selected context chips (always hard filter) ---
+        context_match = False
+        if selected_contexts:
+            for ctx in selected_contexts:
+                if ctx.strip() and ctx.strip().lower() not in meta_str_lower:
+                    match = False
+                    break
+                elif ctx.strip():
+                    context_match = True
+
         # --- Vector distance threshold ---
         if pid in distances:
             dist = distances[pid]
             user_q = raw_query.strip().lower()
             is_exact = user_q and len(user_q) > 2 and (user_q in caption_lower or user_q in meta_str_lower)
 
-            if is_exact:
+            if is_exact or context_match:
                 allowed_dist = 0.85
             elif has_keyword_match:
                 allowed_dist = 0.75
@@ -428,12 +438,7 @@ def perform_search(
                     match = False
                     break
 
-        # --- Selected context chips (always hard filter) ---
-        if selected_contexts:
-            for ctx in selected_contexts:
-                if ctx.strip() and ctx.strip().lower() not in meta_str_lower:
-                    match = False
-                    break
+        # We moved the selected_contexts hard filter above the distance threshold.
         
         # --- HARD FILTER for specific media types (Screenshots/Documents/Selfies) ---
         # If the query explicitly asks for or implies a screenshot/document/selfie, strictly enforce it
@@ -775,7 +780,18 @@ def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
                 information_gain_score=1.0
             )
     except Exception as e:
-        print(f"Zero result suggestion error: {e}")
+        print(f"Zero result suggestion Vector error: {e}")
+        # Last resort fallback if Gemini API is rate-limited (429)
+        import random
+        if unique_tags:
+            random_tags = random.sample(unique_tags, min(5, len(unique_tags)))
+            options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in random_tags]
+            return SmartSuggestion(
+                question="No exact matches. Try one of these available tags:",
+                dimension="context",
+                options=options,
+                information_gain_score=1.0
+            )
         
     return None
 
