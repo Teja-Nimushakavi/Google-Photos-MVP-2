@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 import chromadb
+from groq import Groq
 
 load_dotenv()
 
@@ -43,9 +44,92 @@ try:
 except FileNotFoundError:
     photos_db = []
 
-# Gemini Client
+# Gemini and Groq Clients
 api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key) if api_key and api_key != "your_gemini_api_key_here" else None
+
+groq_api_key = os.getenv("GROQ_API_KEY")
+groq_client = Groq(api_key=groq_api_key) if groq_api_key else None
+
+ACTIVE_LLM_PROVIDER = "gemini" # Can be 'gemini' or 'groq'
+
+def call_llm_json(prompt: str, schema_class=None) -> str:
+    """Helper to call LLM with two-way fallback between Gemini and Groq, returning a JSON string."""
+    global ACTIVE_LLM_PROVIDER
+    
+    def try_gemini():
+        if not client: raise Exception("Gemini client not initialized")
+        config_args = {"response_mime_type": "application/json", "temperature": 0.0}
+        if schema_class:
+            config_args["response_schema"] = schema_class
+        response = client.models.generate_content(
+            model='gemini-3.1-flash-lite',
+            contents=prompt,
+            config=types.GenerateContentConfig(**config_args),
+        )
+        return response.text
+        
+    def try_groq():
+        if not groq_client: raise Exception("Groq client not initialized")
+        groq_prompt = prompt + "\n\nRespond ONLY with valid JSON."
+        chat_completion = groq_client.chat.completions.create(
+            messages=[{"role": "user", "content": groq_prompt}],
+            model="llama-3.3-70b-versatile",
+            response_format={"type": "json_object"},
+            temperature=0.0,
+        )
+        return chat_completion.choices[0].message.content
+
+    if ACTIVE_LLM_PROVIDER == "gemini":
+        try:
+            return try_gemini()
+        except Exception as e:
+            print(f"Gemini generation error: {e}. Switching to Groq.")
+            ACTIVE_LLM_PROVIDER = "groq"
+            return try_groq()
+    else:
+        try:
+            return try_groq()
+        except Exception as e:
+            print(f"Groq generation error: {e}. Switching to Gemini.")
+            ACTIVE_LLM_PROVIDER = "gemini"
+            return try_gemini()
+
+def call_llm_text(prompt: str) -> str:
+    """Helper to call LLM with two-way fallback between Gemini and Groq, returning a string."""
+    global ACTIVE_LLM_PROVIDER
+    
+    def try_gemini():
+        if not client: raise Exception("Gemini client not initialized")
+        response = client.models.generate_content(
+            model='gemini-3.1-flash-lite',
+            contents=prompt,
+        )
+        return response.text
+        
+    def try_groq():
+        if not groq_client: raise Exception("Groq client not initialized")
+        chat_completion = groq_client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model="llama-3.3-70b-versatile",
+            temperature=0.0,
+        )
+        return chat_completion.choices[0].message.content
+
+    if ACTIVE_LLM_PROVIDER == "gemini":
+        try:
+            return try_gemini()
+        except Exception as e:
+            print(f"Gemini text generation error: {e}. Switching to Groq.")
+            ACTIVE_LLM_PROVIDER = "groq"
+            return try_groq()
+    else:
+        try:
+            return try_groq()
+        except Exception as e:
+            print(f"Groq text generation error: {e}. Switching to Gemini.")
+            ACTIVE_LLM_PROVIDER = "gemini"
+            return try_gemini()
 
 # ChromaDB Client
 chroma_client = chromadb.PersistentClient(path=DB_PATH)
@@ -254,21 +338,13 @@ def decompose_query(query: str) -> QueryDecomposition:
     """
 
     try:
-        response = client.models.generate_content(
-            model='gemini-3.1-flash-lite',
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=QueryDecomposition,
-                temperature=0.0
-            ),
-        )
-        result = QueryDecomposition.model_validate_json(response.text)
+        response_text = call_llm_json(prompt, schema_class=QueryDecomposition)
+        result = QueryDecomposition.model_validate_json(response_text)
         if not result.user_facing_query:
             result.user_facing_query = query
         return result
     except Exception as e:
-        print(f"Gemini decomposition error: {e}")
+        print(f"Decomposition error: {e}")
         return QueryDecomposition(search_terms=query, user_facing_query=query)
 
 
@@ -717,16 +793,10 @@ def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
         Return ONLY a JSON list of strings.
         """
         
-        response = client.models.generate_content(
-            model='gemini-3.1-flash-lite',
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                temperature=0.0
-            ),
-        )
-        
-        suggested_tags = json.loads(response.text)
+        prompt += '\nMake sure the response is a JSON object with a single key "tags" containing the list of strings. Example: {"tags": ["tag1", "tag2"]}'
+        response_text = call_llm_json(prompt)
+        parsed = json.loads(response_text)
+        suggested_tags = parsed.get("tags", []) if isinstance(parsed, dict) else parsed
         
         if suggested_tags and len(suggested_tags) > 0:
             options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in suggested_tags[:5]]
@@ -946,8 +1016,8 @@ def rebuild_user_facing_query(decomp: QueryDecomposition, raw_query: str, select
     prompt = f"Given the original base query '{raw_query}' and the following active filters: {', '.join(refinements)}. Write a single, natural, and concise search query that combines the base query and the active filters. Do not include quotes or conversational text."
     
     try:
-        resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=prompt)
-        return resp.text.strip().strip('"')
+        text = call_llm_text(prompt)
+        return text.strip().strip('"')
     except:
         parts = []
         if decomp.subject: parts.append(decomp.subject)
@@ -1173,8 +1243,10 @@ def refine_search(request: RefineRequest):
         # Combine naturally using LLM
         base_q = state.decomposition.user_facing_query or state.raw_query
         prompt = f"Combine the existing search query: '{base_q}' with the new user refinement: '{request.value}'. Return ONLY the naturally combined short query string, choosing appropriate grammatical relationships (with, at, on, during, near, indoors, etc.) instead of blindly appending. Do not include quotes or extra text."
-        resp = client.models.generate_content(model='gemini-3.1-flash-lite', contents=prompt)
-        combined_text = resp.text.strip().strip('"')
+        try:
+            combined_text = call_llm_text(prompt).strip().strip('"')
+        except:
+            combined_text = f"{base_q} {request.value}"
         
         new_decomp = decompose_query(combined_text)
         new_decomp.user_facing_query = combined_text
