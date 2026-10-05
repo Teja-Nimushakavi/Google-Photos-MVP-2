@@ -102,7 +102,7 @@ def call_llm_text(prompt: str) -> str:
     def try_gemini():
         if not client: raise Exception("Gemini client not initialized")
         response = client.models.generate_content(
-            model='gemini-3.1-flash-lite',
+            model='gemini-3.8-flash',
             contents=prompt,
         )
         return response.text
@@ -111,7 +111,7 @@ def call_llm_text(prompt: str) -> str:
         if not groq_client: raise Exception("Groq client not initialized")
         chat_completion = groq_client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="llama-3.3-70b-versatile",
+            model="qwen/qwen3.8-27b",
             temperature=0.0,
         )
         return chat_completion.choices[0].message.content
@@ -469,8 +469,8 @@ def perform_search(
             elif has_keyword_match:
                 allowed_dist = 0.75
             else:
-                # Lower threshold for non-keyword matches to prevent irrelevant results
-                allowed_dist = 0.50
+                # Relaxed threshold for non-keyword matches to prevent zero results for semantic matches
+                allowed_dist = 0.65
 
             if dist > allowed_dist:
                 match = False
@@ -501,7 +501,8 @@ def perform_search(
         if decomposition.companions and decomposition.companions.lower() not in ["none", "unknown", "alone"]:
             photo_people = [p.lower() for p in meta.get("people", [])]
             if "none" in photo_people:
-                match = False
+                if not has_keyword_match:
+                    match = False
 
         # --- NEGATIVE CONSTRAINTS (Master Prompt §14, §37) ---
         for constraint in (decomposition.negative_constraints or []):
@@ -802,7 +803,7 @@ def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
             options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in suggested_tags[:5]]
             return SmartSuggestion(
                 question="No exact matches. Did you mean one of these?",
-                dimension="context",
+                dimension="replace_query",
                 options=options,
                 information_gain_score=1.0
             )
@@ -823,12 +824,10 @@ def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
         )
         
         suggested_tags_dict = {}
-        if chroma_results and chroma_results["ids"] and len(chroma_results["ids"]) > 0:
-            for pid in chroma_results["ids"][0]:
-                photo = next((p for p in photos_db if p["id"] == pid), None)
-                if photo:
-                    m = photo.get('metadata', {})
-                    for k in ['location', 'time', 'event', 'environment', 'activity', 'photo_type', 'people', 'objects']:
+        if chroma_results and chroma_results["metadatas"] and len(chroma_results["metadatas"]) > 0:
+            for m in chroma_results["metadatas"][0]:
+                if m:
+                    for k in ['location', 'time', 'event', 'environment', 'activity', 'photo_type', 'people', 'objects', 'vibe']:
                         v = m.get(k)
                         tags = []
                         if isinstance(v, list):
@@ -845,7 +844,7 @@ def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
             options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in list(suggested_tags_dict.values())[:5]]
             return SmartSuggestion(
                 question="No exact matches. Try broadening your search:",
-                dimension="context",
+                dimension="replace_query",
                 options=options,
                 information_gain_score=1.0
             )
@@ -1170,6 +1169,11 @@ def refine_search(request: RefineRequest):
             setattr(decomp, val_field, request.value)
             if conf_field:
                 setattr(decomp, conf_field, "high")
+        elif dim == "replace_query":
+            state.raw_query = request.value
+            state.decomposition = decompose_query(request.value)
+            state.selected_contexts = []
+            decomp = state.decomposition
         else:
             if request.value not in state.selected_contexts:
                 state.selected_contexts.append(request.value)

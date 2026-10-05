@@ -516,7 +516,7 @@ export default function App() {
                     }}
                   >
                     <Text style={[styles.chipText, { color: s.value === '__not_sure__' ? theme.textMuted : theme.text }]}>
-                      {s.value === '__not_sure__' ? s.label : s.category === 'custom' ? s.label : `+ ${s.label}`}
+                      {s.value === '__not_sure__' ? s.label : (s.category === 'custom' || s.category === 'replace_query') ? s.label : `+ ${s.label}`}
                     </Text>
                   </TouchableOpacity>
                 ))}
