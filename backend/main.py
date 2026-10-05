@@ -681,26 +681,73 @@ def select_best_suggestion(
     )
 
 
+def get_all_unique_tags(db: List[dict]) -> List[str]:
+    tags = set()
+    for p in db:
+        m = p.get("metadata", {})
+        for k in ['location', 'time', 'event', 'environment', 'activity', 'photo_type', 'people', 'objects']:
+            v = m.get(k)
+            if isinstance(v, list):
+                tags.update([str(x).strip() for x in v if str(x).strip() and str(x).lower() != "none"])
+            elif v and isinstance(v, str) and v.lower() != "none":
+                tags.update([x.strip() for x in v.split(',') if x.strip()])
+    return list(tags)
+
 def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
     """Generate broadening semantic suggestions when a search yields 0 results.
-    Ensures suggestions are drawn from available metadata in photos_db by finding
-    the closest matching photos and extracting their tags."""
+    First tries to find synonyms of the query from the existing metadata tags using Gemini.
+    Falls back to closest vector tags if no synonyms are found."""
+    
+    unique_tags = get_all_unique_tags(photos_db)
     
     try:
-        # 1. Get query vector
+        # 1. Ask Gemini to find synonyms from the available tags
+        prompt = f"""
+        The user searched for "{query}" but found 0 results.
+        Here is a list of all available metadata tags in our database:
+        {unique_tags}
+        
+        Please select up to 5 tags from this list that are SYNONYMS or strongly semantically related to "{query}".
+        If none are related, return an empty list.
+        Return ONLY a JSON list of strings.
+        """
+        
+        response = client.models.generate_content(
+            model='gemini-3.1-flash-lite',
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                temperature=0.0
+            ),
+        )
+        
+        suggested_tags = json.loads(response.text)
+        
+        if suggested_tags and len(suggested_tags) > 0:
+            options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in suggested_tags[:5]]
+            return SmartSuggestion(
+                question="No exact matches. Did you mean one of these?",
+                dimension="context",
+                options=options,
+                information_gain_score=1.0
+            )
+    except Exception as e:
+        print(f"Zero result suggestion Gemini error: {e}")
+        
+    try:
+        # 2. Fallback: Query ChromaDB for top closest photos
         emb_response = client.models.embed_content(
             model='gemini-embedding-2',
             contents=query,
         )
         query_vector = emb_response.embeddings[0].values
         
-        # 2. Query ChromaDB for top closest photos (ignoring distance threshold)
         chroma_results = collection.query(
             query_embeddings=[query_vector],
             n_results=10
         )
         
-        suggested_tags = {}
+        suggested_tags_dict = {}
         if chroma_results and chroma_results["ids"] and len(chroma_results["ids"]) > 0:
             for pid in chroma_results["ids"][0]:
                 photo = next((p for p in photos_db if p["id"] == pid), None)
@@ -716,12 +763,11 @@ def generate_zero_result_suggestions(query: str) -> Optional[SmartSuggestion]:
                             
                         for t in tags:
                             t_lower = t.lower()
-                            if t_lower not in suggested_tags:
-                                suggested_tags[t_lower] = t
+                            if t_lower not in suggested_tags_dict:
+                                suggested_tags_dict[t_lower] = t
                                 
-        if suggested_tags:
-            # Pick up to 5 unique tags from the closest photos
-            options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in list(suggested_tags.values())[:5]]
+        if suggested_tags_dict:
+            options = [SuggestionOption(label=str(t).title(), value=str(t).lower()) for t in list(suggested_tags_dict.values())[:5]]
             return SmartSuggestion(
                 question="No exact matches. Try broadening your search:",
                 dimension="context",
